@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+#goBack {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  height: 50px;
+  width: 125px;
+  border-radius: 8px;
+  color: $cool-gray;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+  #goBack {
+    left: 30px;
+    bottom: 20px;
+  }
+}

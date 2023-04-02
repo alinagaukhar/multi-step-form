@@ -1,0 +1,95 @@
+@import "../../../variables.scss";
+@import "../../../variables.scss";
+
+.step {
+  .choosePlan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    .plan {
+      img {
+        margin-bottom: 40px;
+      }
+      width: 138px;
+      height: 193px;
+      border: 1px solid $cool-gray;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: left;
+
+      line-height: 1.6rem;
+      &-name {
+        color: $marine-blue;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: capitalize;
+      }
+      &-price {
+        color: $cool-gray;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+      &-desc {
+        color: $marine-blue;
+        font-size: 0.8rem;
+      }
+      &:hover {
+        cursor: pointer;
+        border-color: $purplish-blue;
+      }
+      &-selected {
+        background-color: $magnolia;
+        border-color: $purplish-blue;
+        border-width: 3px;
+      }
+    }
+  }
+  .chooseMode {
+    background-color: $magnolia;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mode {
+      color: $cool-gray;
+      font-weight: 600;
+      font-size: 0.9rem;
+
+      &-active {
+        color: $marine-blue;
+      }
+    }
+
+    .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+      + .MuiSwitch-track {
+      color: $marine-blue;
+      background-color: $marine-blue;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .step_two {
+    height: 480px;
+    .choosePlan {
+      display: block;
+      .plan {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+}

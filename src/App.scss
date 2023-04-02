@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .App {
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+  }
+}

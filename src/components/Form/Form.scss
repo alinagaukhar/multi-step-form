@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.form-component {
+  background-color: $white;
+  //   padding-left: 550px;
+  width: 940px;
+  height: 600px;
+  border-radius: 15px;
+  padding: 16px 16px 16px 400px;
+  -webkit-box-shadow: -1px 1px 45px 1px rgba(211, 208, 208, 0.75);
+  -moz-box-shadow: -1px 1px 45px 1px rgba(211, 208, 208, 0.75);
+  box-shadow: -1px 1px 45px 1px rgba(211, 208, 208, 0.75);
+}
+
+@media (max-width: 1024px) {
+  .form-component {
+    width: 95%;
+    margin-top: -75px;
+    z-index: 10;
+    height: fit-content;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../variables.scss";
+
+.sidebar {
+  width: 274px;
+  height: 568px;
+  background-image: url("../../assets/images/bg-sidebar-desktop.svg");
+  margin-right: -290px;
+  margin-top: 16px;
+  z-index: 5;
+  color: $white;
+  padding: 30px;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .step_number {
+      border: 1px solid $white;
+      font-weight: 600;
+      padding-top: 5px;
+      margin-right: 20px;
+      text-align: center;
+      height: 33px;
+      width: 33px;
+      border-radius: 50%;
+    }
+
+    .step_number_active {
+      background-color: $light-blue;
+      border-color: $light-blue;
+      color: black;
+    }
+
+    .step_desc {
+      font-size: 0.7rem;
+      color: $light-gray;
+      line-height: 1.5em;
+
+      p {
+        font-weight: 800;
+        font-size: 1rem;
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    height: 172px;
+    margin: 0;
+    background-image: url("../../assets/images/bg-sidebar-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    .row {
+      .step_number {
+        margin-right: 20px;
+      }
+      .step_desc {
+        display: none;
+      }
+    }
+  }
+}

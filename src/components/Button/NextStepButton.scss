@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+#nextStepBtn {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  font-size: 1rem;
+  border: none;
+  background-color: $marine-blue;
+  height: 50px;
+  width: 125px;
+  border-radius: 8px;
+  color: $white;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $pastel-blue;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+  #nextStepBtn {
+    bottom: 20px;
+    right: 30px;
+  }
+}
